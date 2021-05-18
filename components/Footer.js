@@ -1,6 +1,5 @@
-import { FaLinkedin, FaSearch } from 'react-icons/fa'
 import Link from 'next/link'
-import { HiUsers, HiChatAlt } from 'react-icons/hi'
+import { HiUsers } from 'react-icons/hi'
 import { ImHome3 } from 'react-icons/im'
 import { FaBell } from 'react-icons/fa'
 import { BsBriefcaseFill } from 'react-icons/bs'
