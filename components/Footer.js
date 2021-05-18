@@ -9,7 +9,7 @@ import { MdAddBox } from 'react-icons/md'
 const Footer = () => {
   return (
     <div className='sm:hidden '>
-      <div className='fixed bottom-0 flex items-center justify-between w-full px-10 py-2 text-gray-500 bg-primary'>
+      <div className='fixed bottom-0 flex items-center justify-between w-full px-5 py-2 text-gray-500 bg-primary'>
         <Link href='/'>
           <a className='flex flex-col items-center justify-center'>
             <ImHome3 size={26} />

@@ -19,15 +19,17 @@ const Chat = () => {
   }
 
   return (
-    <div className='fixed overflow-scroll w-[290px] top-[105px] bottom-0 right-0'>
-      <ChatHeader setOpenChat={setOpenChat} openChat={openChat} />
-      {openChat && (
-        <div className='pt-12'>
-          <div className='overflow-scroll '>
-            {chats && chats?.map((chat) => <ChatItem key={chat.id} {...chat} />)}
+    <div className='hidden md:block'>
+      <div className='fixed overflow-scroll w-[290px] top-[105px] bottom-0 right-0'>
+        <ChatHeader setOpenChat={setOpenChat} openChat={openChat} />
+        {openChat && (
+          <div className='pt-12'>
+            <div className='overflow-scroll '>
+              {chats && chats?.map((chat) => <ChatItem key={chat.id} {...chat} />)}
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   )
 }
@@ -81,7 +83,7 @@ const ChatHeader = ({ setOpenChat, openChat }) => {
       onClick={() => setOpenChat((openChat) => !openChat)}
       className={`${
         !openChat && 'bottom-0'
-      } fixed z-10 border-b cursor-pointer rounded-t-md w-72 bg-primary`}>
+      } fixed z-10 border-b cursor-pointer  rounded-t-md w-72 bg-primary`}>
       <div className='flex justify-between p-2 focus:outline-none'>
         <div className='flex items-center space-x-2'>
           <div className='relative'>

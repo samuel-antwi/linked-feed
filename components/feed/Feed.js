@@ -1,17 +1,20 @@
 import Ads from '../Ads'
 import Chat from '../Chat'
+import SuggestedFeed from '../SuggestedFeed'
 import Me from './Me'
 import MostViewedcourse from './MostViewedcourse'
 import NewPost from './NewPost'
 import News from './News'
 import Posts from './Posts'
+import Recent from './Recent'
 import Sort from './Sort'
 
 const Feed = ({ posts }) => {
   return (
-    <div className='mb-40 space-x-6 md:flex '>
+    <div className='mb-40 md:space-x-6 md:flex '>
       <div className='hidden w-60 lg:block'>
         <Me />
+        <Recent />
       </div>
       <div className='flex-1 '>
         <NewPost />
@@ -22,6 +25,7 @@ const Feed = ({ posts }) => {
         <News />
         <MostViewedcourse />
         <Ads />
+        <SuggestedFeed />
       </div>
     </div>
   )

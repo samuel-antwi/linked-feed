@@ -19,7 +19,7 @@ const Ads = () => {
         </div>
         <p className='text-sm text-center'>
           💥 Samuel, explore relevant opportunities with{' '}
-          <span className='font-semibold'>Appian Corporation</span>
+          <span className='font-semibold'>Antwi Corporation</span>
         </p>
         <button className='border-2 border-[#0E65C2] py-1 px-6 rounded-full text-[#0E65C2] font-semibold text-base'>
           Follow

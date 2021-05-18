@@ -12,7 +12,7 @@ import { GoPrimitiveDot } from 'react-icons/go'
 
 const Navbar = () => {
   return (
-    <main className='sticky top-0 z-20 hidden px-8 bg-primary sm:block'>
+    <main className='sticky top-0 z-20 hidden px-8 shadow bg-primary sm:block'>
       <div className='flex items-center max-w-6xl mx-auto lg:justify-between'>
         <LeftNavItems />
         <RightNavItems />

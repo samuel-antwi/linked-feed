@@ -8,7 +8,7 @@ const Authur = ({ avatar, profession, name, id, isOnline }) => {
         </div>
         <div>
           <p>{name}</p>
-          <div className='flex items-center space-x-2 capitalize'>
+          <div className='flex flex-wrap space-x-2 capitalize'>
             {profession.map((pro, index) => (
               <p className='text-xs text-gray-500' key={index}>
                 {pro}

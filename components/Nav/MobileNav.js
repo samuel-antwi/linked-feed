@@ -14,7 +14,7 @@ const MobileNav = () => {
                 <img className='w-8 h-8 rounded-full' src='/images/my-avatar.jpeg' alt='' />
               </a>
             </Link>
-            <div className='flex items-center  space-x-3 py-1.5 px-3 rounded bg-[#EEF3F7]'>
+            <div className='flex items-center   py-1.5 px-3 rounded bg-[#EEF3F7]'>
               <FaSearch size={14} />
               <input
                 className='bg-[#EEF3F7] focus:outline-none'
@@ -25,7 +25,7 @@ const MobileNav = () => {
           </div>
           <Link href='/'>
             <a>
-              <HiChatAlt size={26} />
+              <HiChatAlt className='text-gray-500' size={26} />
             </a>
           </Link>
         </div>

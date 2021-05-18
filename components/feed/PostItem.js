@@ -4,6 +4,7 @@ import Markdown from 'react-markdown'
 import { useState } from 'react'
 import LinesEllipsis from 'react-lines-ellipsis'
 import PostHandlers from './PostHandlers'
+import { AiTwotoneLike, AiFillHeart } from 'react-icons/ai'
 
 const PostItem = ({ authur, description, image, likes }) => {
   const [showCaption, setShowCaption] = useState(false)
@@ -41,9 +42,33 @@ const PostItem = ({ authur, description, image, likes }) => {
         </div>
       </div>
       {image && <img src={image.url} alt='Post media' />}
+      <Reactions />
       <div className='px-4 pt-5'>
         <hr className='' />
         <PostHandlers />
+      </div>
+    </div>
+  )
+}
+
+const Reactions = () => {
+  return (
+    <div className='flex items-center p-4 space-x-3 text-sx'>
+      <div className='flex items-center space-x-2'>
+        <div className='bg-[#1885BD] flex items-center justify-center h-4 w-4  rounded-full justify-items-center'>
+          <AiTwotoneLike size={12} className='text-gray-50 ' />
+        </div>
+        <p className='text-xs text-gray-600'>20</p>
+      </div>
+      <div className='flex items-center space-x-2'>
+        <div className='bg-[#E0704C] flex items-center justify-center h-4 w-4  rounded-full justify-items-center'>
+          <AiFillHeart size={12} className='text-gray-50 ' />
+        </div>
+        <p className='text-xs text-gray-600'>32</p>
+      </div>
+      <div className='flex items-center space-x-2 text-xs text-gray-600'>
+        <p>. 12</p>
+        <p className='text-gray-600'>comments</p>
       </div>
     </div>
   )
